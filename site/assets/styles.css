@@ -1,35 +1,113 @@
-:root {
-  --bg: #0f172a;
-  --card: #111827;
-  --accent: #22c55e;
-  --text: #e5e7eb;
-}
-* { box-sizing: border-box; }
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: var(--text);
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: url(https://wallpapers.com/images/hd/breaking-news-background-sc9wenfgo5cufe3f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-.container {
-  max-width: 720px;
-  background: rgba(17, 24, 39, 0.9);
-  padding: 2rem;
-  border-radius: 18px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, .35);
-  text-align: center;
+
+.header {
+    background: linear-gradient(to right,red, white);
+    color: white;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 12px;
+    text-align: center;
+    background: url(https://img.freepik.com/fotos-premium/linea-roja-abstracta-fondo-negro-portada-tarjeta-visita-volante-estandarte-ilustracion-vectorial_1109131-658.jpg?semt=ais_hybrid&w=740&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;;
 }
-h1 { margin-top: 0; color: white; }
-.button {
-  display: inline-block;
-  margin-top: 1rem;
-  background: var(--accent);
-  color: #052e16;
-  text-decoration: none;
-  padding: .9rem 1.2rem;
-  border-radius: 999px;
-  font-weight: bold;
+
+.nav {
+    background: aliceblue;
+    color: navy;
+    padding: 12px;
+    margin-top: 15px;
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    gap: 600px;
+    margin-top: 15px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 80px;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.noticia {
+    background: linear-gradient(to right,red, black);
+    color: white;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 12px;
+    flex: 1;
+    height: 200px;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.noticia:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, black, white);
+    background: url(https://media.tenor.com/1Qs83afjC6IAAAAM/luli-temblor.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+        height: 400px;
+    transition: 0.5s;
+}
+ 
+.aside {
+    background: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    flex: 1;
+    text-align: left;
+    color: black;
+    font-size: 25px;
+    height: 320px;
+    line-height: 50px;
+}
+
+.article {
+    background: linear-gradient(to right, white, red, black);
+    color: white;
+    padding: 150px;
+    margin-top: 10px;
+    border: 2px solid silver;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    width: 500px;
+}
+
+.footer {
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
 }
